@@ -1,0 +1,53 @@
+ul.social {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0 26px;
+
+  ul.social li {
+    display: inline-block;
+    margin: 12px;
+  }
+
+  ul.social li a svg {
+    display: block;
+  }
+
+  ul.social li a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+  }
+
+  ul.social li a svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .icon {
+    color: #ffffff;
+    fill: #ffffff;
+    &:hover {
+      border-radius: 100%;
+
+      color: #ffffff;
+      fill: #ffffff;
+
+      -webkit-transform: scale(1.25);
+
+      transform: scale(1.25);
+
+      -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+
+      transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+
+      transition: background-color 0.5s, transform 0.5s ease-out;
+
+      transition: background-color 0.5s, transform 0.5s ease-out,
+        -webkit-transform 0.5s ease-out;
+    }
+  }
+}

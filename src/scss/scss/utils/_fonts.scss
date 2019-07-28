@@ -1,0 +1,243 @@
+/* ---------------------------------------------- */
+/* Font(s) Import
+/* ---------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Raleway-Regular;
+  src: url("./font/Raleway/RalewayDots-Regular.ttf");
+}
+.raleway-regular {
+  font-family: "Raleway-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Bungee-Regular;
+  src: url("./font/Bungee/BungeeInline-Regular.ttf");
+}
+.bungee-regular {
+  font-family: "Bungee-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* Below are have not been used in old site */
+@font-face {
+  font-family: Alfa-Regular;
+  src: url("./font/Alfa/AlfaSlabOne-Regular.ttf");
+}
+.alfa-regular {
+  font-family: "Alfa-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Arimo-Bold;
+  src: url("./font/Arimo/Arimo-Bold.ttf");
+}
+.arimo-bold {
+  font-family: "Arimo-Bold", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Arimo-BoldItalic;
+  src: url("./font/Arimo/Arimo-BoldItalic.ttf");
+}
+.arimo-bold-italic {
+  font-family: "Arimo-BoldItalic", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Arimo-talic;
+  src: url("./font/Arimo/Arimo-Italic.ttf");
+}
+.arimo-italic {
+  font-family: "Arimo-Italic", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Arimo-Regular;
+  src: url("./font/Arimo/Arimo-Regular.ttf");
+}
+.arimo-regular {
+  font-family: "Arimo-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Yellowtail-Regular;
+  src: url("./font/Yellowtail/Yellowtail-Regular.ttf");
+}
+.yellowtail-regular {
+  font-family: "Yellowtail-Regular", sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("./font/Poppins/Poppins-Regular.ttf");
+}
+.poppins-regular {
+  font-family: "Poppins-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("./font/Poppins/Poppins-Bold.ttf");
+}
+.poppins-bold {
+  font-family: "Poppins-Bold", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Lato-Regular;
+  src: url("./font/Lato/Lato-Regular.ttf");
+}
+.lato-regular {
+  font-family: "Lato-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url("./font/Lato/Lato-Bold.ttf");
+}
+.lato-bold {
+  font-family: "Lato-Bold", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("./font/Roboto/Roboto-Black.ttf");
+}
+.roboto-regular {
+  font-family: "Roboto-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("./font/Roboto/Roboto-Bold.ttf");
+}
+.roboto-bold {
+  font-family: "Roboto-Bold", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+// New Fonts
+/* ------------------------------------------------------------------------------------------- */
+.upper {
+  text-transform: uppercase;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Roboto-Condensed-Regular;
+  src: url("./font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+.roboto-condensed {
+  font-family: "Roboto-Condensed-Regular", sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+@font-face {
+  font-family: Roboto-Condensed-Light;
+  src: url("./font/RobotoCondensed/RobotoCondensed-Light.ttf");
+}
+.roboto-condensed-Light {
+  font-family: "Roboto-Condensed-Light", sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+@font-face {
+  font-family: Roboto-Condensed-Bold;
+  src: url("./font/RobotoCondensed/RobotoCondensed-Bold.ttf");
+}
+.roboto-condensed-bold {
+  font-family: "Roboto-Condensed-Bold", sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Open-Sans-Condensed-Light;
+  src: url("./font/OpenSansCondensed/OpenSansCondensed-Light.ttf");
+}
+.open-sans-condensed-light {
+  font-family: "Open-Sans-Condensed-Light", sans-serif, Helvetica Neue,
+    Helvetica, Arial, sans-serif !important;
+}
+@font-face {
+  font-family: Open-Sans-Condensed-Bold;
+  src: url("./font/OpenSansCondensed/OpenSansCondensed-Bold.ttf");
+}
+.open-sans-condensed-bold {
+  font-family: "Open-Sans-Condensed-Bold", sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Playfair-Black;
+  src: url("./font/Playfair/PlayfairDisplay-Black.ttf");
+}
+.playfair-black {
+  font-family: "Playfair-Black", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Playfair-Black-Italic;
+  src: url("./font/Playfair/PlayfairDisplay-BlackItalic.ttf");
+}
+.playfair-black-italic {
+  font-family: "Playfair-Black-Italic", sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+@font-face {
+  font-family: Playfair-Bold;
+  src: url("./font/Playfair/PlayfairDisplay-Bold.ttf");
+}
+.playfair-bold {
+  font-family: "Playfair-Bold", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Playfair-Bold-Italic;
+  src: url("./font/Playfair/PlayfairDisplay-BoldItalic.ttf");
+}
+.playfair-bold-italic {
+  font-family: "Playfair-Bold-Italic", sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+@font-face {
+  font-family: Playfair-Italic;
+  src: url("./font/Playfair/PlayfairDisplay-Italic.ttf");
+}
+.playfair-italic {
+  font-family: "Playfair-Italic", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Playfair-Regular;
+  src: url("./font/Playfair/PlayfairDisplay-Regular.ttf");
+}
+.playfair-regular {
+  font-family: "Playfair-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+/* ------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("./font/Montserrat/Montserrat-Regular.ttf");
+}
+.montserrat-regular {
+  font-family: "Monserrat-Regular", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("./font/Montserrat/Montserrat-Bold.ttf");
+}
+.montserrat-bold {
+  font-family: "Monserrat-Bold", sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+  font-weight: bold;
+}
+/* ------------------------------------------------------------------------------------------- */

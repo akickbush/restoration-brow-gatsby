@@ -1,0 +1,122 @@
+#hidden-nav {
+  width: 60vw;
+  height: 100vh;
+  background-color: $be-black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
+  z-index: 999;
+}
+.dimmer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  cursor: pointer;
+}
+#hidden-nav.hide {
+  transition: transform 1.3s ease;
+  transform: translate3d(-200vw, 0, 0);
+}
+#hidden-nav.show {
+  transform: translate3d(0vw, 0, 0);
+}
+.hidden-nav-white-top {
+  background-color: $be-white;
+  padding: 10px;
+}
+.hidden-nav-black-bottom {
+  background-color: $be-black;
+  padding: 10px;
+}
+li.hidden-nav-top {
+  display: flex;
+  justify-content: center;
+}
+li.hidden-nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.expandable {
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+ul.hidden-nav {
+  justify-content: flex-start;
+}
+ul.hidden-nav li {
+  margin-top: 10px;
+}
+#hidden-nav-other li {
+  margin-top: 10px;
+}
+#hidden-nav .btn-nav {
+  justify-content: flex-end;
+}
+.off-white {
+  background: $be-white;
+}
+.hidden-nav-x {
+  height: 25px;
+  margin-top: 20px;
+  transform: translate(-50%, -50%);
+  margin-right: -12px;
+}
+.hidden-nav-show-btn {
+  margin-left: 15px;
+  cursor: pointer;
+}
+li .menu-item {
+  color: $be-black;
+  margin-top: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+li .menu-item-small {
+  font-size: 1.1rem;
+  color: $be-black;
+  margin-top: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+#shop-row,
+#education-row {
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.down {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+ul.hidden-nav-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

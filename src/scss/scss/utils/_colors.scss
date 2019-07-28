@@ -1,0 +1,86 @@
+/* ---------------------------------------------- */
+/* Color Scheme - Bowler Esthetics
+/* ---------------------------------------------- */
+$be-pink-light: #f6dddf;
+$be-pink-medium: #eec9c8;
+$be-pink-dark: #df9c9d;
+$be-grey-light: #b9c6ca;
+$be-grey-dark: #687a80;
+$be-black: #000000;
+$be-white: #ffffff;
+$be-off-white: #eeeeee;
+/* ---------------------------------------------- */
+/* Custom Alerts
+/* ---------------------------------------------- */
+.alert-light {
+  @extend .montserrat-regular;
+  color: $be-black;
+  background-color: $be-pink-light;
+  border-color: $be-pink-light;
+}
+.alert-medium {
+  @extend .montserrat-regular;
+  color: $be-black;
+  background-color: $be-pink-medium;
+  border-color: $be-pink-medium;
+}
+.alert-dark {
+  @extend .montserrat-regular;
+  color: $be-black;
+  background-color: $be-pink-dark;
+  border-color: $be-pink-dark;
+}
+
+.light-pink-bg {
+  background-color: $be-pink-light !important;
+}
+.light-pink {
+  color: $be-pink-light !important;
+}
+/* ---------------------------------------------- */
+.medium-pink-bg {
+  background-color: $be-pink-medium !important;
+}
+.medium-pink {
+  color: $be-pink-medium !important;
+}
+/* ---------------------------------------------- */
+.dark-pink-bg {
+  background-color: $be-pink-dark !important;
+}
+.dark-pink {
+  color: $be-pink-dark !important;
+}
+/* ---------------------------------------------- */
+.light-grey-bg {
+  background-color: $be-grey-light !important;
+}
+.light-grey {
+  color: $be-grey-light !important;
+}
+/* ---------------------------------------------- */
+.dark-grey-bg {
+  background-color: $be-grey-dark !important;
+}
+.dark-grey {
+  color: $be-grey-dark !important;
+}
+/* ---------------------------------------------- */
+.black {
+  color: $be-black !important;
+}
+.black-bg {
+  background-color: $be-black !important;
+}
+.off-white {
+  color: $be-off-white !important;
+}
+.off-white-bg {
+  background-color: $be-off-white !important;
+}
+.white {
+  color: $be-white !important;
+}
+.white-bg {
+  background-color: $be-white !important;
+}

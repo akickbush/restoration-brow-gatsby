@@ -1,8 +1,18 @@
 {
-  "name": "gatsby-starter-bootstrap",
-  "description": "Simple starter for Gatsby",
-  "version": "2.0.1",
-  "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
+  "name": "restoration-brow-gatsby",
+  "description": "Restoration Brow Website",
+  "version": "1.0.0",
+  "author": "Adam Kickbush",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop -o",
+    "format": "prettier --write \"**/*.+(js|json|md)\"",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint:text": "textlint src/pages/**/index.md",
+    "lint:textfix": "textlint --fix src/pages/**/index.md",
+    "test": "prettier --write \"**/*.+(js|jsx|json|css|scss)\""
+  },
   "dependencies": {
     "gatsby": "2.13.21",
     "gatsby-image": "2.2.6",
@@ -73,17 +83,6 @@
       "npm run lint:textfix",
       "git add"
     ]
-  },
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.+(js|json|md)\"",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "lint:text": "textlint src/pages/**/index.md",
-    "lint:textfix": "textlint --fix src/pages/**/index.md",
-    "test": "prettier --write \"**/*.+(js|jsx|json|css|scss)\""
   },
   "husky": {
     "hooks": {

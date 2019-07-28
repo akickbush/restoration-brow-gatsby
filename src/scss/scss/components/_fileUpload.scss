@@ -1,0 +1,72 @@
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  @extend .montserrat-bold;
+  border: none;
+  color: $be-white;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: darken($be-pink-dark, 10%);
+  }
+
+  &.upload-btn {
+    background-color: $be-pink-dark;
+    border-radius: 0;
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+      height: 100%;
+      transition: all 0.3s;
+      width: 100%;
+    }
+
+    &::before {
+      color: $be-white;
+      content: "Upload";
+      font-size: 130%;
+      height: 100%;
+      left: 0;
+      line-height: 2.3;
+      position: absolute;
+      top: -180%;
+      transition: all 0.3s;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: darken($be-pink-dark, 30%);
+
+      span {
+        transform: translateY(300%);
+      }
+
+      &::before {
+        top: 0;
+      }
+    }
+  }
+}
+
+.upload-value {
+  margin: 0 auto;
+  color: $be-black;
+}
+.upload-error {
+  color: red !important;
+}

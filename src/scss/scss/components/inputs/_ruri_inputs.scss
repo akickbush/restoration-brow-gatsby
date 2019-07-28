@@ -1,0 +1,79 @@
+/* Ruri */
+.input__field--ruri {
+  width: 100%;
+  background: transparent;
+  padding: 0.5em 0;
+  margin-bottom: 2em;
+  color: $be-black;
+}
+
+.input__label--ruri {
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  font-size: 1em;
+  padding: 10px 0 5px;
+  pointer-events: none;
+}
+
+.input__label--ruri::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: $be-black;
+  left: 0;
+  top: 100%;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.input__label-content--ruri {
+  padding: 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.3s, color 0.3s;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.input__field--ruri:focus + .input__label--ruri::after,
+.input--filled .input__label--ruri::after {
+  background: $be-black;
+  -ms-transform: scale3d(1, 0.25, 1);
+  -webkit-transform: scale3d(1, 0.25, 1);
+  -moz-transform: scale3d(1, 0.25, 1);
+  -o-transform: scale3d(1, 0.25, 1);
+  transform: scale3d(1, 0.25, 1);
+}
+
+.input__field--ruri:focus + .input__label--ruri .input__label-content--ruri,
+.input--filled .input__label--ruri .input__label-content--ruri {
+  color: $be-black;
+  -ms-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  -webkit-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  -moz-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  -o-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+}
+
+.value + .input__label--ruri::after,
+.input--filled .input__label--ruri::after {
+  background: $be-black;
+  -ms-transform: scale3d(1, 0.25, 1);
+  -webkit-transform: scale3d(1, 0.25, 1);
+  -moz-transform: scale3d(1, 0.25, 1);
+  -o-transform: scale3d(1, 0.25, 1);
+  transform: scale3d(1, 0.25, 1);
+}
+
+.value + .input__label--ruri .input__label-content--ruri,
+.input--filled .input__label--ruri .input__label-content--ruri {
+  color: $be-black;
+  -ms-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  -webkit-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  -moz-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  -o-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+}

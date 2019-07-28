@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    title: 'Resoration Brow',
+    description: 'Resoration Brow',
+    siteUrl: 'https://restorationbrow.com',
+    author: 'Adam Kickbush',
+    twitter: '',
     adsense: '',
   },
   pathPrefix: '/',
@@ -50,10 +50,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
+        name: 'Resoration Brow',
+        short_name: 'RestoratiomnBrow',
+        description: 'Restoration Brow',
+        homepage_url: 'https://restorationbrow.com',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',
