@@ -1,0 +1,24 @@
+$white: #ffffff;
+$black: #000000;
+$teal: #b7eaee;
+// rgba(183,234,238,1)
+
+.gradient-t-w {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(183, 234, 238, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.gradient-w-t {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(183, 234, 238, 1) 100%
+  );
+}

@@ -1,0 +1,11 @@
+img.insta-img {
+  border: 8px solid $black;
+  border-width: 2px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  &:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}

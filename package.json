@@ -2,36 +2,46 @@
   "name": "restoration-brow-gatsby",
   "private": true,
   "description": "Website for Restoration Brow",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Adam Kickbush",
   "license": "MIT",
   "scripts": {
+    "start": "run-p start:**",
+    "start:app": "sass --watch src/scss/main.scss src/style/style.css | npm run develop",
     "build": "gatsby build",
-    "develop": "gatsby develop -o",
+    "clean": "rimraf .cache public",
+    "develop": "npm run clean && gatsby develop -o",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "eslint-plugin-react": "^7.14.3",
     "gatsby": "^2.13.39",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.4",
+    "gatsby-plugin-netlify": "^2.1.3",
+    "gatsby-plugin-netlify-functions": "^0.0.3",
     "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-purgecss": "^4.0.0",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-source-filesystem": "^2.1.6",
     "gatsby-transformer-sharp": "^2.2.4",
+    "netlify-lambda": "^1.5.1",
+    "npm-run-all": "^4.1.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-instafeed": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "5.0.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3"
   },
   "keywords": [
     "gatsby"

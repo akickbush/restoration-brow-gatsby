@@ -1,0 +1,19 @@
+/* ---------------------------------------------- */
+/* Font(s) Import
+/* ---------------------------------------------- */
+@font-face {
+  font-family: Calligraffitti;
+  src: url('./font/calligraffitti.ttf');
+}
+.calli {
+  font-family: 'Calligraffitti', sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
+@font-face {
+  font-family: Gadaquali;
+  src: url('./font/gadaquali.ttf');
+}
+.gada {
+  font-family: 'Gadaquali', sans-serif, Helvetica Neue, Helvetica, Arial,
+    sans-serif !important;
+}
