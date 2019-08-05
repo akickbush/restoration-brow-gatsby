@@ -1,9 +1,6 @@
-header {
-  background-color: $teal;
-  margin-bottom: 1.45rem;
-  .header--container {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 1.45rem 1.0875rem;
-  }
+.header--text {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: $white;
+  @extend .font-gada;
 }

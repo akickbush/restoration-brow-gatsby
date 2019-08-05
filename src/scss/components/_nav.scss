@@ -1,11 +1,13 @@
+$nav-height: 40px;
+
 .brow-nav {
-  display: block;
-  //   position: fixed;
-  //   width: 100%;
+  position: fixed;
+  width: 100%;
   z-index: 99;
+  left: 0;
   top: 0;
-  height: 60px;
-  background-color: #000000;
+  height: $nav-height;
+  background-color: $black;
   box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.12);
   text-align: center;
 }
@@ -28,18 +30,18 @@
 #hambmenu {
   position: relative;
   width: 40px;
-  height: 45px;
+  height: 35px;
   float: left;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 #hambmenu span {
   position: absolute;
-  height: 5px;
-  width: 100%;
+  height: 3px;
+  width: 80%;
   vertical-align: middle;
-  margin: 20px 0 0 15px;
-  background: white;
+  margin: 8px 0 0 15px;
+  background: $white;
   border-radius: 8px;
   opacity: 1;
   left: 0;
@@ -96,13 +98,15 @@
   left: 50%;
   opacity: 0;
 }
-
+// Slide Out Menu
 #menu {
   position: absolute;
-  height: calc(100vh - 60px);
+  max-height: calc(100vh);
+  overflow-y: scroll;
+  top: $nav-height;
   width: 210px;
-  background-color: white;
-  z-index: 99;
+  background-color: $white;
+  z-index: 98;
   box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.12);
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -110,15 +114,20 @@
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
 }
+.menu-icon {
+  width: 1rem;
+  color: $black;
+  margin-right: 3px;
+}
 #menu ul {
   margin-top: 0px;
   padding: 0px;
-  color: black;
+  color: $black;
   list-style-type: none;
   text-align: left;
 }
 #menu li {
-  padding: 30px 0 20px 20px;
+  padding: 20px 0 20px 20px;
   font-size: 1.5em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
@@ -126,14 +135,9 @@
   border-bottom: none;
 }
 
-.fa {
-  color: black;
-  padding-right: 8px;
-}
-
 li a {
   text-decoration: none;
-  color: black;
+  color: $black;
 }
 
 #menu.isopen {
