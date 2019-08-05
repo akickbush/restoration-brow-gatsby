@@ -8,7 +8,11 @@ import SEO from '../../components/seo'
 import { ABOUT } from '../../config'
 
 const About = ({ data }) => {
-  let abouts = ABOUT.map((about, i) => <li key={i + 1}>{about}</li>)
+  let abouts = ABOUT.map((about, i) => (
+    <p key={i + 1} className="font-gada" style={{ fontSize: 30 }}>
+      {about}
+    </p>
+  ))
   // Image(s) from GraphQL Queary
   const headerImg = data.header.edges[0].node.childImageSharp.fluid
   const aboutImg = data.about.edges[0].node.childImageSharp.fluid
@@ -25,9 +29,7 @@ const About = ({ data }) => {
       <SEO title="About" />
       <div className="container-fluid py-5">
         <div className="row">
-          <div className="col-md-6 text-center">
-            <ul>{abouts}</ul>
-          </div>
+          <div className="col-md-6 text-center">{abouts}</div>
           <div className="col-md-6 text-center">
             <Image fluid={aboutImg} title="Family" />
           </div>

@@ -3,20 +3,21 @@ import { graphql } from 'gatsby'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
+import Card from '../../components/card'
 
 import { SERVICES } from '../../config'
 
 const Services = ({ data }) => {
   let services = SERVICES.map((service, i) => (
-    <li key={i + 1}>
-      {service.name}
-      {service.detail}
-      {service.time}
-      {service.cost}
-      <a href={service.link} rel="noopener noreferrer" target="_blank">
-        Book Now
-      </a>
-    </li>
+    <div className="col-md-6" key={i + 1}>
+      <Card
+        name={service.name}
+        detail={service.detail}
+        link={service.link}
+        time={service.time}
+        price={service.cost}
+      />
+    </div>
   ))
   // Image(s) from GraphQL Queary
   const headerImg = data.header.edges[0].node.childImageSharp.fluid
@@ -32,19 +33,7 @@ const Services = ({ data }) => {
     >
       <SEO title="Services" />
       <div className="container-fluid py-5">
-        <div className="row">
-          <div className="col-md-6 text-center">
-            <h2>left column</h2>
-          </div>
-          <div className="col-md-6 text-center">
-            <h2>right column</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
-            <ul>{services}</ul>
-          </div>
-        </div>
+        <div className="row">{services}</div>
       </div>
     </Layout>
   )
