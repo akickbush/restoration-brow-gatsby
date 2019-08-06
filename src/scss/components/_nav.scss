@@ -23,6 +23,33 @@ $nav-height: 40px;
   line-height: 60px;
 }
 
+ul.top-nav {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  list-style-type: none;
+  li {
+    margin-top: 6px;
+    color: $white;
+    a {
+      text-decoration: none;
+      color: $white;
+      margin-right: 15px;
+      &:hover {
+        color: $teal;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.active-link {
+  color: $teal !important;
+  &:hover {
+    color: white !important;
+    text-decoration: underline;
+  }
+}
+
 .nav-logo {
   width: 100px;
 }
@@ -100,9 +127,10 @@ $nav-height: 40px;
 }
 // Slide Out Menu
 #menu {
-  position: absolute;
+  position: fixed;
   max-height: calc(100vh);
   overflow-y: scroll;
+  left: 0;
   top: $nav-height;
   width: 210px;
   background-color: $white;

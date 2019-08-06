@@ -45,7 +45,7 @@ const MenuLinks = props => {
           imgStyle={{ objectFit: 'contain' }}
         />
       </Link>
-      <ul>{menu}</ul>
+      <ul className="pt-3">{menu}</ul>
     </div>
   )
 }

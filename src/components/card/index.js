@@ -52,7 +52,7 @@ const Card = ({ name, detail, link, time, price }) => {
         className="card-img-top"
       />
       <div className="card-body my-2 mx-2 text-center">
-        <h1 className="card-title font-gada">{name}</h1>
+        <h1 className="card-title font-calli">{name}</h1>
         <p className="card-text mb-0">{detail}</p>
         <p className="card-text">
           <small>Time: {time}</small> <small>Price: {price}</small>

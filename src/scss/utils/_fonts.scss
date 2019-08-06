@@ -17,3 +17,34 @@
   font-family: 'Gadaquali', sans-serif, Helvetica Neue, Helvetica, Arial,
     sans-serif !important;
 }
+/* ---------------------------------------------- */
+/* Source Sans Pro
+/* ---------------------------------------------- */
+@font-face {
+  font-family: SSP;
+  src: url('./font/SourceSansPro-Black.ttf');
+}
+.font-ssp {
+  font-family: 'SSP', sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+@font-face {
+  font-family: SSPB;
+  src: url('./font/SourceSansPro-Bold.ttf');
+}
+.font-ssp-b {
+  font-family: 'SSPB', sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+@font-face {
+  font-family: SSPL;
+  src: url('./font/SourceSansPro-Light.ttf');
+}
+.font-ssp-b {
+  font-family: 'SSPL', sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+@font-face {
+  font-family: SSPR;
+  src: url('./font/SourceSansPro-Regular.ttf');
+}
+.font-ssp-r {
+  font-family: 'SSPR', sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
