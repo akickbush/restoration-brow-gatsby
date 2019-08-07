@@ -8666,12 +8666,7 @@ h3 {
   font-family: SSP;
   src: url("./font/SourceSansPro-Black.ttf");
 }
-.font-ssp, h1,
-h2,
-h3,
-h4,
-h5,
-p, html {
+.font-ssp, html {
   font-family: "SSP", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
@@ -8687,7 +8682,12 @@ p, html {
   font-family: SSPL;
   src: url("./font/SourceSansPro-Light.ttf");
 }
-.font-ssp-b {
+.font-ssp-l, h1,
+h2,
+h3,
+h4,
+h5,
+p {
   font-family: "SSPL", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
