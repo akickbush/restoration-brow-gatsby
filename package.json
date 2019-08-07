@@ -8,7 +8,10 @@
   "scripts": {
     "start": "run-p start:**",
     "start:app": "sass --watch src/scss/main.scss src/style/style.css | npm run develop",
-    "build": "gatsby build",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build": "run-p build:**",
+    "build:app": "npm run clean && gatsby build",
+    "build:lambda": "netlify-lambda build src/lambda",
     "clean": "rimraf .cache public",
     "develop": "npm run clean && gatsby develop -o",
     "format": "prettier --write src/**/*.{js,jsx}",
@@ -16,6 +19,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "eslint-plugin-react": "^7.14.3",
     "gatsby": "^2.13.39",
     "gatsby-image": "^2.2.6",
@@ -29,6 +33,7 @@
     "gatsby-source-filesystem": "^2.1.6",
     "gatsby-transformer-sharp": "^2.2.4",
     "netlify-lambda": "^1.5.1",
+    "nodemailer": "^6.3.0",
     "npm-run-all": "^4.1.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
