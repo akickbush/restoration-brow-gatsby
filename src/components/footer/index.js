@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 import Styled from 'styled-components'
 
-import { LINKS } from '../../config'
+import { FOOTER_NAV as LINKS } from '../../config'
 
 const MyFooter = Styled.footer`
   width: 100%;
@@ -72,7 +72,9 @@ const Footer = () => {
     } else {
       return (
         <li key={i + 1} className="footer-link">
-          <Link to={link.link}>{link.text}</Link>
+          <Link to={link.link} activeClassName="active-link">
+            {link.text}
+          </Link>
         </li>
       )
     }
@@ -94,7 +96,7 @@ const Footer = () => {
           <FooterRight className="col-lg-6 justify-content-center">
             <ul className="footer-links">{footerLinks}</ul>
           </FooterRight>
-          <div className="col-12 text-center">
+          <div className="col-12 text-center py-3">
             &copy; {new Date().getFullYear()}, Restoration Brow
           </div>
         </div>

@@ -2,6 +2,41 @@
 /* Font(s) Import
 /* ---------------------------------------------- */
 @font-face {
+  font-family: DancingScript-Bold;
+  src: url('./font/DancingScript-Bold.ttf');
+}
+.font-dancing-bold {
+  font-family: 'DancingScript-Bold', sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+@font-face {
+  font-family: DancingScript-Regular;
+  src: url('./font/DancingScript-Regular.ttf');
+}
+.font-dancing-reg {
+  font-family: 'DancingScript-Regular', sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  src: url('./font/PlayfairDisplay-Bold.ttf');
+}
+.font-playfair-bold {
+  font-family: 'PlayfairDisplay-Bold', sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url('./font/PlayfairDisplay-Regular.ttf');
+}
+.font-playfair-reg {
+  font-family: 'PlayfairDisplay-Regular', sans-serif, Helvetica Neue, Helvetica,
+    Arial, sans-serif !important;
+}
+/* ---------------------------------------------- */
+/* Other
+/* ---------------------------------------------- */
+@font-face {
   font-family: Calligraffitti;
   src: url('./font/calligraffitti.ttf');
 }

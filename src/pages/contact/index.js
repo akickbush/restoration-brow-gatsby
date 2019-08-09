@@ -132,7 +132,7 @@ const Contact = ({ data }) => {
     >
       <SEO title="Contact" />
       <div className="container-fluid">
-        <form id="contact-target" className="form--contact">
+        <form id="contact-target" className="form--contact py-5">
           <div className="row">
             <div className="col-md-8 mr-auto ml-auto">
               <section className="content">

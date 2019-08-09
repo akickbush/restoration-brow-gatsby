@@ -26,7 +26,7 @@ const CardButton = Styled.a`
   &:hover {
     color: black;
     text-decoration: none;
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
   }
   background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
 `
@@ -52,7 +52,7 @@ const Card = ({ name, detail, link, time, price }) => {
         className="card-img-top"
       />
       <div className="card-body my-2 mx-2 text-center">
-        <h1 className="card-title font-calli">{name}</h1>
+        <h1 className="card-title">{name}</h1>
         <p className="card-text mb-0">{detail}</p>
         <p className="card-text">
           <small>Time: {time}</small> <small>Price: {price}</small>

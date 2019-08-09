@@ -147,6 +147,12 @@ ul.top-nav {
   color: $black;
   margin-right: 3px;
 }
+.white-icon {
+  color: $white !important;
+  &:hover {
+    color: $teal !important;
+  }
+}
 #menu ul {
   margin-top: 0px;
   padding: 0px;

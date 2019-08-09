@@ -6,6 +6,10 @@ ul.footer-links {
   li.footer-link {
     a {
       color: $white;
+      &:hover {
+        color: $teal;
+        text-decoration: underline;
+      }
     }
   }
 }

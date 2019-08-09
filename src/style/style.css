@@ -8640,14 +8640,65 @@ h3 {
   background: linear-gradient(90deg, #020024 0%, white 0%, #b7eaee 100%);
 }
 
+.gradient-up {
+  background: rgba(255, 255, 255, 0.82);
+  background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.82) 0%, white 0%, #b7eaee 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255, 255, 255, 0.82)), color-stop(0%, white), color-stop(100%, #b7eaee));
+  background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.82) 0%, white 0%, #b7eaee 100%);
+  background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.82) 0%, white 0%, #b7eaee 100%);
+  background: -ms-linear-gradient(45deg, rgba(255, 255, 255, 0.82) 0%, white 0%, #b7eaee 100%);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.82) 0%, white 0%, #b7eaee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#b7eaee", GradientType=1 );
+}
+
 /* ---------------------------------------------- */
 /* Font(s) Import
+/* ---------------------------------------------- */
+@font-face {
+  font-family: DancingScript-Bold;
+  src: url("./font/DancingScript-Bold.ttf");
+}
+.font-dancing-bold {
+  font-family: "DancingScript-Bold", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+@font-face {
+  font-family: DancingScript-Regular;
+  src: url("./font/DancingScript-Regular.ttf");
+}
+.font-dancing-reg {
+  font-family: "DancingScript-Regular", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  src: url("./font/PlayfairDisplay-Bold.ttf");
+}
+.font-playfair-bold {
+  font-family: "PlayfairDisplay-Bold", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url("./font/PlayfairDisplay-Regular.ttf");
+}
+.font-playfair-reg, h1,
+h2,
+h3,
+h4,
+h5,
+p, .btn-restore {
+  font-family: "PlayfairDisplay-Regular", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+/* ---------------------------------------------- */
+/* Other
 /* ---------------------------------------------- */
 @font-face {
   font-family: Calligraffitti;
   src: url("./font/calligraffitti.ttf");
 }
-.font-calli, .btn-restore {
+.font-calli {
   font-family: "Calligraffitti", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
@@ -8682,12 +8733,7 @@ h3 {
   font-family: SSPL;
   src: url("./font/SourceSansPro-Light.ttf");
 }
-.font-ssp-l, h1,
-h2,
-h3,
-h4,
-h5,
-p {
+.font-ssp-l {
   font-family: "SSPL", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
@@ -8853,6 +8899,13 @@ ul.top-nav li a:hover {
   margin-right: 3px;
 }
 
+.white-icon {
+  color: #ffffff !important;
+}
+.white-icon:hover {
+  color: #b7eaee !important;
+}
+
 #menu ul {
   margin-top: 0px;
   padding: 0px;
@@ -8902,17 +8955,28 @@ ul.footer-links {
 ul.footer-links li.footer-link a {
   color: #ffffff;
 }
+ul.footer-links li.footer-link a:hover {
+  color: #b7eaee;
+  text-decoration: underline;
+}
 
-img.insta-img {
+.insta-img {
   margin-bottom: 25px;
   opacity: 0.8;
+  border: 2px solid #000000;
   filter: alpha(opacity=80);
 }
-img.insta-img:hover {
+.insta-img:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
+@media only screen and (max-width: 400px) {
+  .insta-img {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
 /* ---------------------------------------------- */
 /* Custom Loaders - SVG(s) */
 /* ---------------------------------------------- */
@@ -9185,6 +9249,11 @@ textarea.input__field {
 
 .contact--width {
   width: calc(100% - 2em);
+}
+
+.google-map {
+  position: relative !important;
+  height: 500px !important;
 }
 
 /* ---------------------------------------------- */
@@ -9484,7 +9553,6 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -9500,7 +9568,6 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -9516,7 +9583,6 @@ h4 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -9532,7 +9598,6 @@ h5 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -9548,7 +9613,6 @@ h6 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;

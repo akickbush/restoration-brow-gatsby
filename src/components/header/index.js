@@ -50,6 +50,7 @@ const H1 = styled.h1`
 `
 const Header = ({
   headerImg,
+  headerInnerImg,
   imgCaption,
   height,
   mobileHeight,

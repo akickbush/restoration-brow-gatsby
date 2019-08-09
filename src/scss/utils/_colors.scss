@@ -2,7 +2,6 @@ $white: #ffffff;
 $black: #000000;
 $teal: #b7eaee;
 // rgba(183,234,238,1)
-
 .gradient-t-w {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -21,4 +20,46 @@ $teal: #b7eaee;
     rgba(255, 255, 255, 1) 0%,
     rgba(183, 234, 238, 1) 100%
   );
+}
+
+.gradient-up {
+  background: rgba(255, 255, 255, 0.82);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(183, 234, 238, 1) 100%
+  );
+  background: -webkit-gradient(
+    left bottom,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0.82)),
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(100%, rgba(183, 234, 238, 1))
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(183, 234, 238, 1) 100%
+  );
+  background: -o-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(183, 234, 238, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(183, 234, 238, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(183, 234, 238, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b7eaee', GradientType=1 );
 }

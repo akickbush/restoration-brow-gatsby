@@ -9,7 +9,7 @@ import { ABOUT } from '../../config'
 
 const About = ({ data }) => {
   let abouts = ABOUT.map((about, i) => (
-    <p key={i + 1} className="font-gada" style={{ fontSize: 30 }}>
+    <p key={i + 1} style={{ fontSize: 30 }}>
       {about}
     </p>
   ))

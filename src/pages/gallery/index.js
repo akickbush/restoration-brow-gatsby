@@ -19,7 +19,9 @@ const Gallery = ({ data }) => {
       headerTitle={`My Work`}
     >
       <SEO title="Gallery" />
-      <Instagram />
+      <div className="container-fluid">
+        <Instagram />
+      </div>
     </Layout>
   )
 }
