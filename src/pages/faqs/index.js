@@ -52,12 +52,18 @@ const Faqs = ({ data }) => {
             content={[
               `Cosmetic tattooing is designed to fade over time. Factors such as skin type lifestyle age metabolism medications and pigment color affect the longevity of the tattoo. The sun and Direct uv lighting (tanning beds) can affect the rate at which these pigments are broken down. To take care of your brows, follow the aftercare instructions and touch up your brows every 12 to 18 months as needed. Touchups are normal and expected or permanent cosmetics`,
               `Final results vary and cannot be guaranteed due to the nature of the skin as it heals. A follow up appointment is highly recommended at 4 to 6 weeks where we can assess your pigment retention and make any changes necessary to complete your cosmetic tattoo.`,
+              `You will want to use a sunscreen for your cosmetic tattoo.`,
             ]}
           />
           <AccordionItem
             title={`What factors will affect my cosmetic tattoo?`}
             content={[
-              `Oily skin increased oil production can cause the delicate hair strokes to blur and heal lighter and powdery. Smoking) smokers may notice that their semi permanent cosmetics will fade faster. Anemia and iron deficiency)your body will absorb these iron based pigments more quickly. Sun exposure) increased exposure to the sun will cause premature fading. You inal results vary and cannot be guaranteed due to the nature of the skin as it heals. A follow up appointment is highly recommended at 4 to 6 weeks where we can assess your pigment retention and make any changes necessary to complete your cosmetic tattoo. want to use a sunscreen for your cosmetic tattoo. AGe and metabolism) the faster your metabolism the faster the pigment will fade. Bleeding during the procedure) excessive bleeding during your procedure will greatly affect how your body retains pigment. While this is not entirely in our control, it is important that you follow before care instructions to help minimize waiting. This includes avoiding blood medication alcohol and caffeine 24 hours before your appointment.`,
+              `Oily skin - increased oil production can cause the delicate hair strokes to blur and heal lighter and powdery.`,
+              `Smoking - smokers may notice that their semi permanent cosmetics will fade faster.`,
+              `Anemia and iron deficiency - your body will absorb these iron based pigments more quickly.`,
+              `Sun exposure - increased exposure to the sun will cause premature fading.`,
+              `Age and metabolism - the faster your metabolism the faster the pigment will fade.`,
+              `Bleeding during the procedure - excessive bleeding during your procedure will greatly affect how your body retains pigment. While this is not entirely in our control, it is important that you follow before care instructions to help minimize waiting. This includes avoiding blood medication alcohol and caffeine 24 hours before your appointment.`,
             ]}
           />
           <AccordionItem
@@ -126,11 +132,11 @@ const Faqs = ({ data }) => {
 
 export const query = graphql`
   query faqQuery {
-    header: allFile(filter: { name: { eq: "plant_1250x702" } }) {
+    header: allFile(filter: { name: { eq: "tools_1252x698" } }) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1250) {
+            fluid(quality: 100, maxWidth: 1252) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

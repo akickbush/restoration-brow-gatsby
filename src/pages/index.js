@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 import Styled from 'styled-components'
 
@@ -13,6 +13,13 @@ const A = Styled.a`
   color: #000000;
   &:hover {
     color: #000000;
+  }
+  `
+const AL = Styled(Link)`
+  text-decoration: none !important;
+  color: #000000;
+  &:hover {
+    color: #b7eaee;
   }
   `
 
@@ -43,28 +50,50 @@ const IndexPage = ({ data }) => {
     >
       <SEO title="Home" />
       <div className="container-fluid">
-        <div className="row pt-4">
-          <div className="col-6 mr-auto ml-auto">
-            <Image fluid={logo} alt="Restoration Brow" />
-          </div>
-        </div>
         <div className="row py-4">
-          <div className="col-10 col-md-6 mr-auto ml-auto">{intro}</div>
+          <div className="col-md-12 pb-2">
+            <h1
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 50 }}
+            >
+              Welcome Brow Babes
+            </h1>
+          </div>
+          <div className="col-10 col-md-6 mr-auto ml-auto">
+            {intro}
+            <h3
+              className="text-center pb-3 font-dancing-reg"
+              style={{ fontSize: 50 }}
+            >
+              <AL to="/services">See my services</AL>
+            </h3>
+          </div>
           <div className="col-10 col-md-6 mr-auto ml-auto ">
             <Map className="google-map" />
           </div>
         </div>
 
+        <div className="row pb-4">
+          <div className="col-6 mr-auto ml-auto">
+            <Image fluid={logo} alt="Restoration Brow" />
+          </div>
+        </div>
+
         <div className="row py-4 gradient-up">
           <div className="col-10 col-md-6 mr-auto ml-auto py-2">
-            <h2 className="text-center">Address</h2>
+            <h2
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 35 }}
+            >
+              Find Me At
+            </h2>
             <h3 className="text-center">
               <A
                 href="https://www.google.com/maps/place/2112+Armory+Dr,+Santa+Rosa,+CA+95401/@38.4583804,-122.7275444,17z/data=!3m1!4b1!4m5!3m4!1s0x80843873ddb598f7:0x7bcf0f707e431443!8m2!3d38.4583804!4d-122.7253504"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                212 Armory Dr, Suite B<br />
+                2112 Armory Dr, Suite B<br />
                 Platinum Salon
                 <br />
                 Santa Rosa, CA 95401
@@ -72,7 +101,12 @@ const IndexPage = ({ data }) => {
             </h3>
           </div>
           <div className="col-10 col-md-6 mr-auto ml-auto py-2">
-            <h2 className="text-center">Information</h2>
+            <h2
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 35 }}
+            >
+              How To Reach Me
+            </h2>
             <h3 className="text-center">
               Email:{' '}
               <A href={`mailto:alexis@restorationbrow.com`} target="_top">
@@ -87,7 +121,7 @@ const IndexPage = ({ data }) => {
 
         <div className="row py-4">
           <div className="col-md-12">
-            <h1 className="text-center">Client Spotlights</h1>
+            <h1 className="text-center font-dancing-reg">Client Spotlights</h1>
           </div>
           <div className="col-10 col-md-4 py-2 mr-auto ml-auto">
             <Image

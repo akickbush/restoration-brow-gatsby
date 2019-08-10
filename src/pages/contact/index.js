@@ -72,6 +72,7 @@ const Contact = ({ data }) => {
         })
         setValues({
           ...values,
+          submitError: '',
           submitSuccess: data.message,
           reason: '',
           name: '',
@@ -167,12 +168,12 @@ const Contact = ({ data }) => {
 
               {renderButton()}
               {values.submitError && (
-                <div className="alert alert-danger m-t-20 text-center">
+                <div className="alert alert-danger mt-3  text-center">
                   <strong>{values.submitError}</strong>
                 </div>
               )}
               {values.submitSuccess && (
-                <div className="alert alert-success m-t-20 text-center">
+                <div className="alert alert-success mt-3 text-center">
                   <strong>{values.submitSuccess}</strong>
                 </div>
               )}
@@ -186,11 +187,11 @@ const Contact = ({ data }) => {
 
 export const query = graphql`
   query contactQuery {
-    header: allFile(filter: { name: { eq: "tools_1250x722" } }) {
+    header: allFile(filter: { name: { eq: "tools_1252x698" } }) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1250) {
+            fluid(quality: 100, maxWidth: 1252) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

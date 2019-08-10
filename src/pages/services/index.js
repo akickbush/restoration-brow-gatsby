@@ -16,6 +16,7 @@ const CardContainer = Styled.div`
 `
 
 const A = Styled.a`
+  font-size: 35px;
   color: #b7eaee;
   &:hover {
     color: #000000;
@@ -53,6 +54,7 @@ const Services = ({ data }) => {
               <h2 className="text-center">
                 Please download and fill out my{' '}
                 <A
+                  className="font-dancing-reg"
                   href="https://restoration-brow.s3-us-west-1.amazonaws.com/restorationBrow.pdf"
                   rel="noopener noreferrer"
                   target="_blank"

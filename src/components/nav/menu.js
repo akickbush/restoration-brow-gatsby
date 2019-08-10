@@ -21,7 +21,12 @@ const MenuLinks = props => {
     if (link.a) {
       return (
         <li key={i + 1}>
-          <a href={link.a} rel="noopener noreferrer" target="_blank">
+          <a
+            href={link.a}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="font-dancing-reg"
+          >
             {link.icon} {link.text}
           </a>
         </li>
@@ -29,7 +34,7 @@ const MenuLinks = props => {
     } else {
       return (
         <li key={i + 1}>
-          <Link to={link.link}>
+          <Link to={link.link} className="font-dancing-reg">
             {link.icon} {link.text}
           </Link>
         </li>
