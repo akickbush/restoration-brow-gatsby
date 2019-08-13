@@ -5,14 +5,7 @@ import Image from 'gatsby-image'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 
-import { ABOUT } from '../../config'
-
 const About = ({ data }) => {
-  let abouts = ABOUT.map((about, i) => (
-    <p key={i + 1} style={{ fontSize: 30 }}>
-      {about}
-    </p>
-  ))
   // Image(s) from GraphQL Queary
   const headerImg = data.header.edges[0].node.childImageSharp.fluid
   const aboutImg = data.about.edges[0].node.childImageSharp.fluid
@@ -29,9 +22,59 @@ const About = ({ data }) => {
       <SEO title="About" />
       <div className="container-fluid py-5">
         <div className="row">
-          <div className="col-md-6 text-center">{abouts}</div>
+          <div className="col-md-6 text-center">
+            <h1
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 50 }}
+            >
+              Hey Everyone!
+            </h1>
+            <p>
+              Thanks for checking out my Permanent Brows page! I am Alexis King
+              Farias and I wanted to share a little about who I am and how I got
+              here! Firstly, I am a mother to a handsome young boy, Heilyn, who
+              lights up my world and talks my ear off. I am also a newlywed to
+              my life partner, Eunise Farias. We married in Sayulita, Mexico on
+              June 2, 2019 surrounded by our closest friends and family. I am so
+              grateful to have found love and happiness with these two.
+            </p>
+            <h1
+              className="text-center font-dancing-reg pb-3"
+              style={{ fontSize: 40 }}
+            >
+              “Family: life’s greatest blessings. A group that dreams, laughs,
+              plays and loved together."
+            </h1>
+            <p>
+              My love for eyebrow perfection has blossomed through brow
+              evolution during the last 8 years. After high school I decided to
+              venture off to Cosmetology School in Sacramento in 2011 where I
+              completed all of my courses in hair and always had a joy for
+              shaping and creating eyebrows with makeup. My love exploded for
+              the creation of perfect eyebrows so I advanced from just makeup to
+              waxing and tinting to a more permanent alternative. I have been
+              offering Permanent Eyebrows by Restoration Brow since March 2016.
+              I am two times certified in permanent brows including powder brows
+              and microblading. I believe in continued education, the phrase
+              practice makes perfect and accepting new challenges. I am
+              extraordinarily dedicated to my clients and my work because when
+              you love what you do the sincerity just comes naturally. I have a
+              passion for eyebrows and a sincere joy knowing I have given my
+              clients eyebrows to flaunt and be proud of! My education journey
+              is far from over so I am excited to continue my knowledge and give
+              better brows tomorrow as I did yesterday.
+            </p>
+          </div>
           <div className="col-md-6 text-center">
             <Image fluid={aboutImg} title="Family" />
+          </div>
+          <div className="col-md-12">
+            <h1
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 40 }}
+            >
+              “Do it with passion or not at all”
+            </h1>
           </div>
         </div>
       </div>

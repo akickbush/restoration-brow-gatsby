@@ -121,8 +121,6 @@ export const INTRO = [
   `My priority here is your brows because of course Happy brows are the best brows! `,
 ]
 
-export const ABOUT = [``]
-
 export const SERVICES = [
   {
     name: `Microblading Initial Session`,
