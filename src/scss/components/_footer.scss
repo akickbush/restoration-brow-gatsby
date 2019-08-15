@@ -5,9 +5,9 @@ ul.footer-links {
   list-style-type: none;
   li.footer-link {
     a {
-      color: $white;
+      color: $black !important;
       &:hover {
-        color: $teal;
+        color: $black !important;
         text-decoration: underline;
       }
     }

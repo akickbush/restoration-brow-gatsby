@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   Heart,
   KissesWink,
@@ -121,61 +122,61 @@ export const INTRO = [
   `My priority here is your brows because of course Happy brows are the best brows! `,
 ]
 
-export const SERVICES = [
-  {
+export const SERVICES = {
+  MICROBLADING: {
     name: `Microblading Initial Session`,
-    detail: `Mimicking real hairs, Microblading is a very pretty and natural looking Permanent makeup procedure. This is best for young, or normal/dry skin type and not best for Oly, or thin/aging skin types. This is a two step process. Touch up is required and included in the initial price. Please book your touch up at the same time as booking your initial session. Anywhere between 4-10 weeks. Aftercare included at both sessions.`,
+    detail: `Mimicking real hairs, Microblading is a very pretty and natural looking Permanent makeup procedure. This is best for young, or normal/dry skin type and not best for oily, or thin/aging skin types. This is a two step process. Touch up is required and included in the initial price. Please book your touch up at the same time as booking your initial session. Anywhere between 4-10 weeks. Aftercare included at both sessions.`,
     time: `2 hours 30 minutes`,
-    cost: `$500.00`,
+    price: `$500.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=HJCANC5LBNRT34TO5VBLJOGI`,
   },
-  {
+  OMBRE: {
     name: `Ombré Powder Initial Session`,
-    detail: `For more fullness and filled in brows, an ombré powder brow is great for all skin types, including oily and aging/thin skin. This head very soft and natural or bold and defined- whichever suits you! This is a two step process. A touch up is required and included in the price. Please book your touch up at the same time as booking your initial session. Anywhere between 4-10 weeks. Aftercare is included at both sessions`,
+    detail: `For more fullness and filled in brows, an ombré powder brow is great for all skin types, including oily and aging/thin skin. This can be very soft and natural or bold and defined - whichever suits you! This is a two step process. A touch up is required and included in the price. Please book your touch up at the same time as booking your initial session. Anywhere between 4-10 weeks. Aftercare is included at both sessions`,
     time: `2 hours 30 minutes`,
-    cost: `$475.00`,
+    price: `$475.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=VBVZORAZPCLP4CM67OM627PH`,
   },
-  {
+  COMBINATION: {
     name: `Combination Brow Initial Session`,
-    detail: `Combining Microblading and shading, a combination brow gives a nice filled in look with some fluff and or “natural-hairs” by adding Microblading. This can be done several different ways depending on skin type and preference. This is a two step process. A touch up is required and included in the price. Please book your touch up at the same time as booking your initial session. Anywhere between 4-10 weeks. Aftercare is included at both sessions.`,
+    detail: `Combining Microblading and Shading. A combination brow gives a nice filled in look with some fluff and or “natural-hairs” by adding Microblading. This can be done several different ways depending on skin type and preference. This is a two step process. A touch up is required and included in the price. Please book your touch up at the same time as booking your initial session. Anywhere between 4-10 weeks. Aftercare is included at both sessions.`,
     time: `3 hours`,
-    cost: `$600.00`,
+    price: `$600.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=5WL2JL3VNNH6HZVZ5IYLPIYG`,
   },
-  {
+  ANNUAL: {
     name: `Annual Touch Ups`,
     detail: `Clients of mine only. Aftercare included.`,
     time: `2 hours`,
-    cost: `$175.00`,
+    price: `$175.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=EZSCBXEMIMYGVPAPX6SDVCJX`,
   },
-  {
+  PERFECTING: {
     name: `Perfecting Appointments`,
     detail: `For clients that need an additional visit after their original touch up visit. Aftercare included.`,
     time: `1 hours`,
-    cost: `$75.00`,
+    price: `$75.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=O7HJAFARZG2IQRNPYHXY5NZM`,
   },
-  {
+  TOUCHUP: {
     name: `Touch Up (Over Previous Cosmetic Tattoo by Another Artist)`,
     detail: `I mostly take all clients who come with previous permanent makeup. I need to see your brows prior to agreeing to the service and determine what service is suitable for you, if any. Please send me pictures (clear and in good lighting) to 707-494-6020. All new clients are booked at a new client price including the touch up as well. I currently do not charge extra for having previous work.`,
     time: `3 hours`,
-    cost: `Price Varies`,
+    price: `Price Varies`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=R5C7IDWWGXUZ4EOSQLHSXHMG`,
   },
-  {
+  BROWWAXSHAPE: {
     name: `Brow Wax & Shape`,
     detail: `Brow waxing provides shape to open the eye and define the brow area.`,
     time: `30 minutes`,
-    cost: `$20.00`,
+    price: `$20.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=T7MUMG5AOCTU5S6AX2WO47TL`,
   },
-  {
+  BROWWAXTINT: {
     name: `Brow Wax & Tint`,
     detail: `Some clients who are not ready for permanent makeup might consider a wax for shape and a tint for color.`,
     time: `30 minutes`,
-    cost: `$35.00`,
+    price: `$35.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=27TXS3HK72G2ZXHMEOX5C5UX`,
   },
-]
+}

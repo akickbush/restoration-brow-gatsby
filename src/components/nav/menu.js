@@ -25,17 +25,21 @@ const MenuLinks = props => {
             href={link.a}
             rel="noopener noreferrer"
             target="_blank"
-            className="font-dancing-reg"
+            className="menu-li"
           >
-            {link.icon} {link.text}
+            {link.text}
           </a>
         </li>
       )
     } else {
       return (
         <li key={i + 1}>
-          <Link to={link.link} className="font-dancing-reg">
-            {link.icon} {link.text}
+          <Link
+            to={link.link}
+            className="menu-li"
+            activeClassName="active-link"
+          >
+            {link.text}
           </Link>
         </li>
       )

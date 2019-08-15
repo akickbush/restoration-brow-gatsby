@@ -7,8 +7,9 @@ import { FOOTER_NAV as LINKS } from '../../config'
 
 const MyFooter = Styled.footer`
   width: 100%;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.12);
 `
 const FooterLeft = Styled.div`
   display: flex;
@@ -50,7 +51,7 @@ const FooterRight = Styled.div`
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo_w_600x205.png" }) {
+      logo: file(relativePath: { eq: "logo_b_600x205.png" }) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 600) {
             ...GatsbyImageSharpFluid

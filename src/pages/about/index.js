@@ -29,7 +29,7 @@ const About = ({ data }) => {
             >
               Hey Everyone!
             </h1>
-            <p>
+            <h3>
               Thanks for checking out my Permanent Brows page! I am Alexis King
               Farias and I wanted to share a little about who I am and how I got
               here! Firstly, I am a mother to a handsome young boy, Heilyn, who
@@ -37,15 +37,20 @@ const About = ({ data }) => {
               my life partner, Eunise Farias. We married in Sayulita, Mexico on
               June 2, 2019 surrounded by our closest friends and family. I am so
               grateful to have found love and happiness with these two.
-            </p>
+            </h3>
             <h1
-              className="text-center font-dancing-reg pb-3"
+              className="text-center font-dancing-reg py-3"
               style={{ fontSize: 40 }}
             >
               “Family: life’s greatest blessings. A group that dreams, laughs,
-              plays and loved together."
+              plays and loves together."
             </h1>
-            <p>
+          </div>
+          <div className="col-md-6 text-center">
+            <Image fluid={aboutImg} title="Family" />
+          </div>
+          <div className="col-md-12">
+            <h3 className="pt-3">
               My love for eyebrow perfection has blossomed through brow
               evolution during the last 8 years. After high school I decided to
               venture off to Cosmetology School in Sacramento in 2011 where I
@@ -54,23 +59,22 @@ const About = ({ data }) => {
               the creation of perfect eyebrows so I advanced from just makeup to
               waxing and tinting to a more permanent alternative. I have been
               offering Permanent Eyebrows by Restoration Brow since March 2016.
+            </h3>
+            <h3>
               I am two times certified in permanent brows including powder brows
               and microblading. I believe in continued education, the phrase
               practice makes perfect and accepting new challenges. I am
-              extraordinarily dedicated to my clients and my work because when
-              you love what you do the sincerity just comes naturally. I have a
+              dedicated to my clients and my work because when you love what you
+              do the sincerity just comes naturally. I have a passion for
               passion for eyebrows and a sincere joy knowing I have given my
               clients eyebrows to flaunt and be proud of! My education journey
               is far from over so I am excited to continue my knowledge and give
               better brows tomorrow as I did yesterday.
-            </p>
-          </div>
-          <div className="col-md-6 text-center">
-            <Image fluid={aboutImg} title="Family" />
+            </h3>
           </div>
           <div className="col-md-12">
             <h1
-              className="text-center font-dancing-reg"
+              className="text-center font-dancing-reg pt-3"
               style={{ fontSize: 40 }}
             >
               “Do it with passion or not at all”

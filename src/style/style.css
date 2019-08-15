@@ -8687,7 +8687,8 @@ h2,
 h3,
 h4,
 h5,
-p, .btn-restore {
+p,
+ul, .btn-restore {
   font-family: "PlayfairDisplay-Regular", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
@@ -8755,7 +8756,7 @@ p, .btn-restore {
   left: 0;
   top: 0;
   height: 40px;
-  background-color: #000000;
+  background-color: #ffffff;
   box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.12);
   text-align: center;
 }
@@ -8783,20 +8784,30 @@ ul.top-nav li {
 }
 ul.top-nav li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   margin-right: 15px;
 }
 ul.top-nav li a:hover {
-  color: #b7eaee;
+  text-decoration: underline;
+}
+
+.menu-li {
+  margin-top: 6px;
+  color: #000000 !important;
+  text-decoration: none;
+  color: #000000;
+  margin-right: 15px;
+}
+.menu-li:hover {
+  color: #000000 !important;
   text-decoration: underline;
 }
 
 .active-link {
-  color: #b7eaee !important;
+  text-decoration: underline !important;
 }
 .active-link:hover {
-  color: white !important;
-  text-decoration: underline;
+  opacity: 0.5;
 }
 
 .nav-logo {
@@ -8818,7 +8829,7 @@ ul.top-nav li a:hover {
   width: 80%;
   vertical-align: middle;
   margin: 8px 0 0 15px;
-  background: #ffffff;
+  background: #000000;
   border-radius: 8px;
   opacity: 1;
   left: 0;
@@ -8953,10 +8964,10 @@ ul.footer-links {
   list-style-type: none;
 }
 ul.footer-links li.footer-link a {
-  color: #ffffff;
+  color: #000000 !important;
 }
 ul.footer-links li.footer-link a:hover {
-  color: #b7eaee;
+  color: #000000 !important;
   text-decoration: underline;
 }
 

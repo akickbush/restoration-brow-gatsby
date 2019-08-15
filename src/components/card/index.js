@@ -1,5 +1,4 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
 import Styled from 'styled-components'
 import Image from 'gatsby-image'
 
@@ -30,27 +29,13 @@ const CardButton = Styled.a`
   }
   background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
 `
-const Card = ({ name, detail, link, time, price }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      cardBackground: file(relativePath: { eq: "tools_1250x722.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 350) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+const Card = ({ img, name, detail, link, time, price }) => {
   return (
     <CardContainer
       className="card my-2"
       onClick={() => window.open(link, '_blank')}
     >
-      <Image
-        fluid={data.cardBackground.childImageSharp.fluid}
-        className="card-img-top"
-      />
+      <Image fluid={img} className="card-img-top" />
       <div className="card-body my-2 mx-2 text-center">
         <h1 className="card-title">{name}</h1>
         <p className="card-text mb-0">{detail}</p>
