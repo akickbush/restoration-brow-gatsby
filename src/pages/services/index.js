@@ -10,7 +10,7 @@ import { SERVICES } from '../../config'
 
 const CardContainer = Styled.div`
   color: #ffffff;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.3);
   padding: 10px;
   border-radius: 20px;
 `
@@ -41,29 +41,9 @@ const Services = ({ data }) => {
       mobileHeight={`250px`}
       opacity={`0.5`}
       className={`header--text`}
-      headerTitle={`Services`}
     >
       <SEO title="Services" />
-      <div className="container-fluid py-5">
-        <div className="row pb-5">
-          <div className="col-md-6 mr-auto ml-auto">
-            <CardContainer>
-              <h2 className="text-center">
-                Please download and fill out my{' '}
-                <A
-                  className="font-dancing-reg"
-                  href="https://restoration-brow.s3-us-west-1.amazonaws.com/restorationBrow.pdf"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Consent Form
-                </A>{' '}
-                and bring with you to your appointment. Thanks!
-              </h2>
-            </CardContainer>
-          </div>
-        </div>
-
+      <div className="container-fluid py-3">
         <div className="row">
           <div className="col-md-6">
             <Card
@@ -146,6 +126,27 @@ const Services = ({ data }) => {
             />
           </div>
         </div>
+
+        <div className="row pt-5 pb-4">
+          <div className="col-md-6 mr-auto ml-auto">
+            <CardContainer>
+              <h2 className="text-center">
+                Please download and fill out my{' '}
+                <A
+                  className="font-dancing-reg"
+                  href="https://restoration-brow.s3-us-west-1.amazonaws.com/restorationBrow.pdf"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  consent form
+                </A>{' '}
+                and bring it with you to your appointment. If you are unable to
+                do so, please arrive to your appointment 10 minutes early. Thank
+                you!
+              </h2>
+            </CardContainer>
+          </div>
+        </div>
       </div>
     </Layout>
   )
@@ -153,11 +154,11 @@ const Services = ({ data }) => {
 
 export const query = graphql`
   query servicesQuery {
-    header: allFile(filter: { name: { eq: "mom_1249x869" } }) {
+    header: allFile(filter: { name: { eq: "servicesHeader_1250x704" } }) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1249) {
+            fluid(quality: 100, maxWidth: 1250) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -205,7 +206,46 @@ export const query = graphql`
       }
     }
 
-    annual: allFile(filter: { name: { eq: "powder_751x455" } }) {
+    annual: allFile(filter: { name: { eq: "annual_750x422" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 750) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+          id
+        }
+      }
+    }
+
+    perfecting: allFile(filter: { name: { eq: "perfectingapt_750x422" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 750) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+          id
+        }
+      }
+    }
+
+    touchup: allFile(filter: { name: { eq: "touchupoverprevious_750x422" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 750) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+          id
+        }
+      }
+    }
+
+    browwaxshape: allFile(filter: { name: { eq: "waxshape_750x422" } }) {
       edges {
         node {
           childImageSharp {
@@ -218,46 +258,7 @@ export const query = graphql`
       }
     }
 
-    perfecting: allFile(filter: { name: { eq: "powder_751x455" } }) {
-      edges {
-        node {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 751) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-          id
-        }
-      }
-    }
-
-    touchup: allFile(filter: { name: { eq: "powder_751x455" } }) {
-      edges {
-        node {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 751) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-          id
-        }
-      }
-    }
-
-    browwaxshape: allFile(filter: { name: { eq: "powder_751x455" } }) {
-      edges {
-        node {
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 751) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-          id
-        }
-      }
-    }
-
-    browwaxtint: allFile(filter: { name: { eq: "powder_751x455" } }) {
+    browwaxtint: allFile(filter: { name: { eq: "waxtint_750x422" } }) {
       edges {
         node {
           childImageSharp {

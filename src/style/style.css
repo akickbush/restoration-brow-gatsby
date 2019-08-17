@@ -8682,13 +8682,15 @@ h3 {
   font-family: PlayfairDisplay-Regular;
   src: url("./font/PlayfairDisplay-Regular.ttf");
 }
-.font-playfair-reg, h1,
-h2,
-h3,
-h4,
-h5,
-p,
-ul, .btn-restore {
+.font-playfair-reg, .btn-restore {
+  font-family: "PlayfairDisplay-Regular", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Black;
+  src: url("./font/PlayfairDisplay-Black.ttf");
+}
+.font-playfair-black {
   font-family: "PlayfairDisplay-Regular", sans-serif, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
@@ -9539,6 +9541,17 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter !important;
 }
 
 h1 {

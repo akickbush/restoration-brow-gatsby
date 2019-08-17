@@ -9,6 +9,7 @@ const Parent = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.12);
 `
 const FakeBgImage = styled(Img)`
   position: absolute;
@@ -66,7 +67,7 @@ const Header = ({
       mobileHeight={mobileHeight}
     />
     <Content className={className}>
-      <H1>{headerTitle}</H1>
+      {headerTitle && <H1>{headerTitle}</H1>}
     </Content>
   </Parent>
 )

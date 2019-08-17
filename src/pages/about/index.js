@@ -17,7 +17,6 @@ const About = ({ data }) => {
       mobileHeight={`250px`}
       opacity={`0.5`}
       className={`header--text`}
-      headerTitle={`About`}
     >
       <SEO title="About" />
       <div className="container-fluid py-5">
@@ -50,7 +49,7 @@ const About = ({ data }) => {
             <Image fluid={aboutImg} title="Family" />
           </div>
           <div className="col-md-12">
-            <h3 className="pt-3">
+            <h3 className="pt-3 text-center">
               My love for eyebrow perfection has blossomed through brow
               evolution during the last 8 years. After high school I decided to
               venture off to Cosmetology School in Sacramento in 2011 where I
@@ -60,7 +59,7 @@ const About = ({ data }) => {
               waxing and tinting to a more permanent alternative. I have been
               offering Permanent Eyebrows by Restoration Brow since March 2016.
             </h3>
-            <h3>
+            <h3 className="pt-3 text-center">
               I am two times certified in permanent brows including powder brows
               and microblading. I believe in continued education, the phrase
               practice makes perfect and accepting new challenges. I am
@@ -88,11 +87,11 @@ const About = ({ data }) => {
 
 export const query = graphql`
   query aboutQuery {
-    header: allFile(filter: { name: { eq: "tools_1252x698" } }) {
+    header: allFile(filter: { name: { eq: "aboutHeader_1250x704" } }) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1252) {
+            fluid(quality: 100, maxWidth: 1250) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

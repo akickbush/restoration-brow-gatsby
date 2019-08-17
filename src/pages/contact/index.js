@@ -143,8 +143,74 @@ const Contact = ({ data }) => {
     >
       <SEO title="Contact" />
       <div className="container-fluid">
-        <form id="contact-target" className="form--contact pt-5">
+        <div className="row">
+          <div className="col-md-6 mr-auto ml-auto pt-5 pb-2">
+            <h2
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 35 }}
+            >
+              Contact me directly at
+            </h2>
+            <h3 className="text-center">
+              <A href={`tel:707-494-6020`}>(707) 494-6020</A>
+            </h3>
+          </div>
+
+          <div className="col-10 mr-auto ml-auto py-2">
+            <hr />
+          </div>
+
+          <div className="col-md-6 mr-auto ml-auto pt-2 pb-3">
+            <h2
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 35 }}
+            >
+              Shoot me an email
+            </h2>
+            <h3 className="text-center">
+              <A href={`mailto:alexis@restorationbrow.com`} target="_top">
+                alexis@restorationbrow.com
+              </A>
+            </h3>
+          </div>
+          <div className="col-10 mr-auto ml-auto py-2">
+            <hr />
+          </div>
+          <div className="col-md-6 mr-auto ml-auto pt-2">
+            <h2
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 35 }}
+            >
+              Visit me at
+            </h2>
+            <h3 className="text-center">
+              <A
+                href="https://www.google.com/maps/place/2112+Armory+Dr,+Santa+Rosa,+CA+95401/@38.4583804,-122.7275444,17z/data=!3m1!4b1!4m5!3m4!1s0x80843873ddb598f7:0x7bcf0f707e431443!8m2!3d38.4583804!4d-122.7253504"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                2112 Armory Dr, Suite B<br />
+                Platinum Salon
+                <br />
+                Santa Rosa, CA 95401
+              </A>
+            </h3>
+          </div>
+          <div className="col-10 mr-auto ml-auto pt-3">
+            <hr />
+          </div>
+        </div>
+
+        <form id="contact-target" className="form--contact pt-2 pb-5">
           <div className="row">
+            <div className="col-md-6 mr-auto ml-auto pt-2">
+              <h2
+                className="text-center font-dancing-reg"
+                style={{ fontSize: 35 }}
+              >
+                Or ask your questions here
+              </h2>
+            </div>
             <div className="col-md-8 mr-auto ml-auto">
               <section className="content">
                 <Input
@@ -190,47 +256,6 @@ const Contact = ({ data }) => {
             </div>
           </div>
         </form>
-
-        <div className="col-8 col-md-4 py-2 mr-auto ml-auto">
-          <Image fluid={contactImg} alt="Contact Me" className="insta-img" />
-        </div>
-
-        <div className="col-10 col-md-6 mr-auto ml-auto pb-4">
-          <h2 className="text-center font-dancing-reg" style={{ fontSize: 35 }}>
-            Or shoot me an email
-          </h2>
-          <h3 className="text-center">
-            <A href={`mailto:alexis@restorationbrow.com`} target="_top">
-              alexis@restorationbrow.com
-            </A>
-          </h3>
-          <h2 className="text-center font-dancing-reg" style={{ fontSize: 35 }}>
-            Or you can always call me directly at
-          </h2>
-          <h3 className="text-center">
-            <A href={`tel:707-494-6020`}>(707) 494-6020</A>
-          </h3>
-        </div>
-        <div className="col-10 col-md-6 mr-auto ml-auto">
-          <hr />
-        </div>
-        <div className="col-10 col-md-6 mr-auto ml-auto pt-2 pb-5">
-          <h2 className="text-center font-dancing-reg" style={{ fontSize: 35 }}>
-            Visit me at
-          </h2>
-          <h3 className="text-center">
-            <A
-              href="https://www.google.com/maps/place/2112+Armory+Dr,+Santa+Rosa,+CA+95401/@38.4583804,-122.7275444,17z/data=!3m1!4b1!4m5!3m4!1s0x80843873ddb598f7:0x7bcf0f707e431443!8m2!3d38.4583804!4d-122.7253504"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              2112 Armory Dr, Suite B<br />
-              Platinum Salon
-              <br />
-              Santa Rosa, CA 95401
-            </A>
-          </h3>
-        </div>
       </div>
     </Layout>
   )

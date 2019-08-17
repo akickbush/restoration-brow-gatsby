@@ -226,7 +226,8 @@ h4,
 h5,
 p,
 ul {
-  @extend .font-playfair-reg;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter !important;
 }
 h1 {
   margin-left: 0;

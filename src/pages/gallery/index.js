@@ -19,7 +19,7 @@ const Gallery = ({ data }) => {
       headerTitle={`My Work`}
     >
       <SEO title="Gallery" />
-      <div className="container-fluid">
+      <div className="container-fluid text-center">
         <Instagram />
       </div>
     </Layout>
@@ -28,11 +28,11 @@ const Gallery = ({ data }) => {
 
 export const query = graphql`
   query galleryQuery {
-    header: allFile(filter: { name: { eq: "apply2_1250x704" } }) {
+    header: allFile(filter: { name: { eq: "mom_1249x869" } }) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 1250) {
+            fluid(quality: 100, maxWidth: 1249) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

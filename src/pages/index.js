@@ -46,7 +46,6 @@ const IndexPage = ({ data }) => {
       mobileHeight={`250px`}
       opacity={`0.5`}
       className={`header--text`}
-      headerTitle={`Restoration Brow`}
     >
       <SEO title="Home" />
       <div className="container-fluid">
@@ -59,24 +58,14 @@ const IndexPage = ({ data }) => {
               Welcome Brow Babes
             </h1>
           </div>
-          <div className="col-10 col-md-6 mr-auto ml-auto">
-            {intro}
-            <h3
-              className="text-center pb-3 font-dancing-reg"
-              style={{ fontSize: 50 }}
-            >
-              <AL to="/services">See my services</AL>
-            </h3>
-          </div>
-          <div className="col-10 col-md-6 mr-auto ml-auto ">
+          <div className="col-10 col-md-6 mr-auto ml-auto">{intro}</div>
+          <div className="col-8 col-md-6 mr-auto ml-auto">
+            <Image fluid={logo} alt="Restoration Brow" className="mb-4" />
             <Map className="google-map" />
           </div>
-        </div>
-
-        <div className="row pb-4">
-          <div className="col-6 mr-auto ml-auto">
-            <Image fluid={logo} alt="Restoration Brow" />
-          </div>
+          {/* <div className="col-10 col-md-6 mr-auto ml-auto">
+            
+          </div> */}
         </div>
 
         <div className="row py-4 gradient-up">
