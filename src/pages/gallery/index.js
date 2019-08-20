@@ -20,7 +20,7 @@ const Gallery = ({ data }) => {
       <SEO title="Gallery" />
       <div className="container-fluid text-center">
         <div className="row">
-          <div className="col-md-12 pb-2">
+          <div className="col-md-12 pt-5">
             <h1
               className="text-center font-dancing-reg"
               style={{ fontSize: 50 }}
