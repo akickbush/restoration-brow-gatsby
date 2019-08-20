@@ -16,10 +16,19 @@ const Gallery = ({ data }) => {
       mobileHeight={`250px`}
       opacity={`0.5`}
       className={`header--text`}
-      headerTitle={`My Work`}
     >
       <SEO title="Gallery" />
       <div className="container-fluid text-center">
+        <div className="row">
+          <div className="col-md-12 pb-2">
+            <h1
+              className="text-center font-dancing-reg"
+              style={{ fontSize: 50 }}
+            >
+              My Work
+            </h1>
+          </div>
+        </div>
         <Instagram />
       </div>
     </Layout>
