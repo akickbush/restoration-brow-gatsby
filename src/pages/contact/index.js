@@ -139,7 +139,6 @@ const Contact = ({ data }) => {
       mobileHeight={`250px`}
       opacity={`0.5`}
       className={`header--text`}
-      headerTitle={`Contact Me`}
     >
       <SEO title="Contact" />
       <div className="container-fluid">
