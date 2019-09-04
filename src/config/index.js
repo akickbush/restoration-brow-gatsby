@@ -179,4 +179,32 @@ export const SERVICES = {
     price: `$35.00`,
     link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=27TXS3HK72G2ZXHMEOX5C5UX`,
   },
+  BROWTOUCHUP: {
+    name: `Required Brow Touch Up`,
+    detail: `For clients who have had their initial session with me. Please book anywhere between 4-10 weeks from your Initial Session. This booking is reserved for included second session perfecting appointments only. Must be booked no longer than 10 weeks from the Initial Session date to avoid additional charges. Required 48 hours notice for cancellations or rescheduling to avoid a $50 charge. Aftercare included.`,
+    time: `2 hours`,
+    price: `FREE`,
+    link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=7JD32P34GYQ3GZZREWY5VL3D`,
+  },
+  FRECKLES: {
+    name: `Freckles`,
+    detail: `Freckle tattoos are perfect for clients who want to look like they have been kissed by the sun. Freckles can be done very subtle or more dramatic. As with all cosmetic makeup, freckles also require a touch up appointment and are suggested to have annual color boosts. The touch up is included in the initial price. Please book your touch up at the same time as booking your initial session. Anywhere between 4-10 weeks. 1 1/2 hours $200 Deposit required for booking. Balance is due at Initial Session`,
+    time: `1 hour 30 minutes`,
+    price: `$75.00`,
+    link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=XDEJY4PN5ODHJ3DJJYOOZJQY`,
+  },
+  FRECKLESTOUCHUP: {
+    name: `Freckles Touch Up`,
+    detail: `For clients who have had their initial freckles session with me. Please book anywhere between 4-10 weeks from your Initial Freckles Session. This booking is reserved for included second session perfecting appointments only. Must be booked no longer than 10 weeks from the Initial Session date to avoid additional charges. Required 48 hours notice for cancellations or rescheduling to avoid a $50 charge. Aftercare included.`,
+    time: `45 minutes`,
+    price: `FREE`,
+    link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=DLONSFWD2ZJMTUIQM75TZHQM`,
+  },
+  FRECKLESANNUAL: {
+    name: `Annual Freckle Refresh`,
+    detail: `For my clients only. Annual freckle refresh appointment.`,
+    time: `1 hour`,
+    price: `$75.00`,
+    link: `https://square.site/appointments/book/mfy94jph0n6o7o/B4D378VE2N7Z3/start?service_id=GD2XKRJMBDEBZJAFXJNRPKOO`,
+  },
 }

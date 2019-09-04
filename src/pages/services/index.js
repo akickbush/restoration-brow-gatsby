@@ -27,12 +27,15 @@ const Services = ({ data }) => {
   const combinationImg = data.combination.edges[0].node.childImageSharp.fluid
   const microbladeImg = data.microblade.edges[0].node.childImageSharp.fluid
   const powderImg = data.powder.edges[0].node.childImageSharp.fluid
-  // placeholders
   const annualImg = data.annual.edges[0].node.childImageSharp.fluid
   const perfectingImg = data.perfecting.edges[0].node.childImageSharp.fluid
   const touchupImg = data.touchup.edges[0].node.childImageSharp.fluid
   const browwaxshapeImg = data.browwaxshape.edges[0].node.childImageSharp.fluid
   const browwaxtintImg = data.browwaxtint.edges[0].node.childImageSharp.fluid
+  const browTouchup = data.browTouchup.edges[0].node.childImageSharp.fluid
+  const freckles = data.freckles.edges[0].node.childImageSharp.fluid
+  const frecklesTouch = data.frecklesTouchup.edges[0].node.childImageSharp.fluid
+  const frecklesAnnual = data.frecklesAnnual.edges[0].node.childImageSharp.fluid
   return (
     <Layout
       headerImg={headerImg}
@@ -123,6 +126,47 @@ const Services = ({ data }) => {
               link={SERVICES.BROWWAXTINT.link}
               time={SERVICES.BROWWAXTINT.time}
               price={SERVICES.BROWWAXTINT.price}
+            />
+          </div>
+
+          <div className="col-md-6">
+            <Card
+              img={browTouchup}
+              name={SERVICES.BROWTOUCHUP.name}
+              detail={SERVICES.BROWTOUCHUP.detail}
+              link={SERVICES.BROWTOUCHUP.link}
+              time={SERVICES.BROWTOUCHUP.time}
+              price={SERVICES.BROWTOUCHUP.price}
+            />
+          </div>
+          <div className="col-md-6">
+            <Card
+              img={freckles}
+              name={SERVICES.FRECKLES.name}
+              detail={SERVICES.FRECKLES.detail}
+              link={SERVICES.FRECKLES.link}
+              time={SERVICES.FRECKLES.time}
+              price={SERVICES.FRECKLES.price}
+            />
+          </div>
+          <div className="col-md-6">
+            <Card
+              img={frecklesTouch}
+              name={SERVICES.FRECKLESTOUCHUP.name}
+              detail={SERVICES.FRECKLESTOUCHUP.detail}
+              link={SERVICES.FRECKLESTOUCHUP.link}
+              time={SERVICES.FRECKLESTOUCHUP.time}
+              price={SERVICES.FRECKLESTOUCHUP.price}
+            />
+          </div>
+          <div className="col-md-6">
+            <Card
+              img={frecklesAnnual}
+              name={SERVICES.FRECKLESANNUAL.name}
+              detail={SERVICES.FRECKLESANNUAL.detail}
+              link={SERVICES.FRECKLESANNUAL.link}
+              time={SERVICES.FRECKLESANNUAL.time}
+              price={SERVICES.FRECKLESANNUAL.price}
             />
           </div>
         </div>
@@ -263,6 +307,62 @@ export const query = graphql`
         node {
           childImageSharp {
             fluid(quality: 100, maxWidth: 751) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+          id
+        }
+      }
+    }
+
+    freckles: allFile(filter: { name: { eq: "freckles_750x422" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 750) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+          id
+        }
+      }
+    }
+
+    frecklesTouchup: allFile(
+      filter: { name: { eq: "frecklesTouchup_750x422" } }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 750) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+          id
+        }
+      }
+    }
+
+    frecklesAnnual: allFile(
+      filter: { name: { eq: "frecklesAnnual_750x422" } }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 750) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+          id
+        }
+      }
+    }
+
+    browTouchup: allFile(filter: { name: { eq: "browTouchup_750x422" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 750) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
