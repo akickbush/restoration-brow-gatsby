@@ -211,11 +211,13 @@ export const query = graphql`
       }
     }
 
-    combination: allFile(filter: { name: { eq: "combination_751x462" } }) {
+    combination: allFile(
+      filter: { name: { eq: "combinationBrowInit_750x422" } }
+    ) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 751) {
+            fluid(quality: 100, maxWidth: 750) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -224,11 +226,11 @@ export const query = graphql`
       }
     }
 
-    microblade: allFile(filter: { name: { eq: "microblade_751x346" } }) {
+    microblade: allFile(filter: { name: { eq: "microBladingInit_750x422" } }) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 751) {
+            fluid(quality: 100, maxWidth: 750) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -237,11 +239,11 @@ export const query = graphql`
       }
     }
 
-    powder: allFile(filter: { name: { eq: "powder_751x455" } }) {
+    powder: allFile(filter: { name: { eq: "ombrePowderInit_750x422" } }) {
       edges {
         node {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 751) {
+            fluid(quality: 100, maxWidth: 750) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

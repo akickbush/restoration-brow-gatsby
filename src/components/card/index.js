@@ -18,16 +18,16 @@ const CardButton = Styled.a`
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
+  background-color: black;
   font-size: 2rem;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   &:hover {
-    color: black;
+    color: white;
+    opacity: 0.6;
     text-decoration: none;
-    background-position: right center;
   }
-  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
 `
 const Card = ({ img, name, detail, link, time, price }) => {
   return (
