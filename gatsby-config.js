@@ -19,12 +19,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Restoration Brow`,
-        short_name: `RestorBrow`,
+        short_name: `RB`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#b7eaee`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`,
+        icon: `src/images/favicon.jpg`,
       },
     },
     {

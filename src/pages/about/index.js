@@ -21,7 +21,7 @@ const About = ({ data }) => {
       <SEO title="About" />
       <div className="container-fluid py-5">
         <div className="row">
-          <div className="col-md-6 text-center">
+          <div className="col-md-12 text-center">
             <h1
               className="text-center font-dancing-reg"
               style={{ fontSize: 50 }}
@@ -45,7 +45,7 @@ const About = ({ data }) => {
               plays and loves together."
             </h1>
           </div>
-          <div className="col-md-6 text-center">
+          <div className="col-md-12 text-center">
             <Image fluid={aboutImg} title="Family" />
           </div>
           <div className="col-md-12">
@@ -60,15 +60,17 @@ const About = ({ data }) => {
               offering Permanent Eyebrows by Restoration Brow since March 2016.
             </h3>
             <h3 className="pt-3 text-center">
-              I am two times certified in permanent brows including powder brows
-              and microblading. I believe in continued education, the phrase
-              practice makes perfect and accepting new challenges. I am
-              dedicated to my clients and my work because when you love what you
-              do the sincerity just comes naturally. I have a passion for
-              passion for eyebrows and a sincere joy knowing I have given my
-              clients eyebrows to flaunt and be proud of! My education journey
-              is far from over so I am excited to continue my knowledge and give
-              better brows tomorrow as I did yesterday.
+              Since 2016 I have become five times certified in Powder,
+              Microblading and Combination eyebrow techniques. In early 2020 I
+              expanded my education and became certified in lip blush and faux
+              freckles. I believe in continued education, the phrase practice
+              makes perfect and accepting new challenges. I am dedicated to my
+              clients and my work because when you love what you do the
+              sincerity just comes naturally. I have a passion for passion for
+              eyebrows and a sincere joy knowing I have given my clients
+              eyebrows to flaunt and be proud of! My education journey is far
+              from over so I am excited to continue my knowledge and give better
+              brows tomorrow as I did yesterday.
             </h3>
           </div>
           <div className="col-md-12">

@@ -9,7 +9,7 @@ const AccordionItem = props => {
     toggleOpen(!open)
   }
   return (
-    <div className="col-md-12">
+    <div className="col-md-10 mx-auto">
       <div className="accordion__item">
         <div className="accordion__item__title" onClick={handleOnclick}>
           <Open className={open ? 'close-svg svg-open' : 'close-svg'} />
