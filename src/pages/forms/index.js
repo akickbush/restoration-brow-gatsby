@@ -18,26 +18,32 @@ const FormsPage = ({ data }) => {
     >
       <SEO title="Forms" />
       <div className="container-fluid py-3">
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-md-10 mx-auto">
-            <Link to="/forms/appointment-policy">Appointment Policy</Link>
+            <Link to="/forms/appointment-policy" className="btn btn-restore">
+              Appointment Policy
+            </Link>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-md-10 mx-auto">
-            <Link to="/forms/consent-form">
+            <Link to="/forms/consent-form" className="btn btn-restore">
               Consent To Application Of Permanent Makeup Procedure
             </Link>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-md-10 mx-auto">
-            <Link to="/forms/medical-history">Client Medical History</Link>
+            <Link to="/forms/medical-history" className="btn btn-restore">
+              Client Medical History
+            </Link>
           </div>
         </div>
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-md-10 mx-auto">
-            <Link to="/forms/covid-release">Covid-19 Release Form</Link>
+            <Link to="/forms/covid-release" className="btn btn-restore">
+              Covid-19 Release Form
+            </Link>
           </div>
         </div>
       </div>
