@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
+import Layout from '../../../components/layout'
+import SEO from '../../../components/seo'
 
-const Forms = ({ data }) => {
+const MedicalHistoryPage = ({ data }) => {
   useEffect(() => {
     let mounted = true
     if (mounted && document && window) {
       // creating PMU script
-      window['pmusigncode'] = '037e66a1-d258-41be-b687-24f682545f07'
+      window['pmusigncode'] = '6c15c08c-63ea-4546-99b9-02ab181d3e5e'
       window['pmusignDiv'] = 'pmusignFormParentId'
       const script = document.createElement('script')
       script.src = '//pmusign.com/form-builder/assets/javascripts/pmusign.js'
@@ -32,14 +32,8 @@ const Forms = ({ data }) => {
       opacity={`0.5`}
       className={`header--text`}
     >
-      <SEO title="Disclosure Form" />
+      <SEO title="Medical Form" />
       <div className="container-fluid py-3">
-        <div className="row">
-          <div className="col-md-10 mx-auto">
-            <div id="pmusignFormParentId" />
-          </div>
-        </div>
-        {/* -------------------------------- */}
         <div className="row">
           <div className="col-md-10 mx-auto">
             <div id="pmusignFormParentId" />
@@ -51,7 +45,7 @@ const Forms = ({ data }) => {
 }
 
 export const query = graphql`
-  query disclosureformQuery {
+  query medicalHistoryFormQuery {
     header: allFile(filter: { name: { eq: "servicesHeader_1250x704" } }) {
       edges {
         node {
@@ -67,4 +61,4 @@ export const query = graphql`
   }
 `
 
-export default Forms
+export default MedicalHistoryPage

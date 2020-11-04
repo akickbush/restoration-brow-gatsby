@@ -35,18 +35,8 @@ export const SIDE_NAV = [
     icon: <CalenderEdit className="menu-icon" />,
   },
   {
-    text: 'Consent Form',
-    link: '/consent-form',
-    icon: <CalenderEdit className="menu-icon" />,
-  },
-  {
-    text: 'Disclosure Form',
-    link: '/disclosure-form',
-    icon: <CalenderEdit className="menu-icon" />,
-  },
-  {
-    text: 'Medical Form',
-    link: '/medical-form',
+    text: 'Forms',
+    link: '/forms',
     icon: <CalenderEdit className="menu-icon" />,
   },
   {
@@ -83,18 +73,8 @@ export const TOP_NAV = [
     icon: <CalenderEdit className="menu-icon" />,
   },
   {
-    text: 'Consent Form',
-    link: '/consent-form',
-    icon: <CalenderEdit className="menu-icon" />,
-  },
-  {
-    text: 'Disclosure Form',
-    link: '/disclosure-form',
-    icon: <CalenderEdit className="menu-icon" />,
-  },
-  {
-    text: 'Medical Form',
-    link: '/medical-form',
+    text: 'Forms',
+    link: '/forms',
     icon: <CalenderEdit className="menu-icon" />,
   },
   {

@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
+import Layout from '../../../components/layout'
+import SEO from '../../../components/seo'
 
 const Forms = ({ data }) => {
   useEffect(() => {
     let mounted = true
     if (mounted && document && window) {
       // creating PMU script
-      window['pmusigncode'] = '0e792604-4b64-4bfc-9720-08426c784ba78'
+      window['pmusigncode'] = '037e66a1-d258-41be-b687-24f682545f07'
       window['pmusignDiv'] = 'pmusignFormParentId'
       const script = document.createElement('script')
       script.src = '//pmusign.com/form-builder/assets/javascripts/pmusign.js'
@@ -32,14 +32,8 @@ const Forms = ({ data }) => {
       opacity={`0.5`}
       className={`header--text`}
     >
-      <SEO title="Consent Form" />
+      <SEO title="Covid Release Form" />
       <div className="container-fluid py-3">
-        <div className="row">
-          <div className="col-md-10 mx-auto">
-            <div id="pmusignFormParentId" />
-          </div>
-        </div>
-        {/* -------------------------------- */}
         <div className="row">
           <div className="col-md-10 mx-auto">
             <div id="pmusignFormParentId" />
@@ -51,7 +45,7 @@ const Forms = ({ data }) => {
 }
 
 export const query = graphql`
-  query consentformQuery {
+  query disclosureformQuery {
     header: allFile(filter: { name: { eq: "servicesHeader_1250x704" } }) {
       edges {
         node {
