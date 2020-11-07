@@ -162,6 +162,18 @@ ul.top-nav {
     color: $teal !important;
   }
 }
+.insta-link {
+  color: $black;
+  svg {
+    width: 2.2rem;
+  }
+  &:hover {
+    color: $teal !important;
+    svg {
+      color: $teal !important;
+    }
+  }
+}
 #menu ul {
   margin-top: 0px;
   padding: 0px;

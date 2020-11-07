@@ -3,7 +3,9 @@ import { graphql } from 'gatsby'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
-import Instagram from '../../components/instagram'
+import ExternalLink from '../../components/externalLink'
+import { Instagram } from '../../components/fa'
+import InstagramGallery from '../../components/instagram'
 
 const Gallery = ({ data }) => {
   // Image(s) from GraphQL Queary
@@ -20,16 +22,22 @@ const Gallery = ({ data }) => {
       <SEO title="Gallery" />
       <div className="container-fluid text-center">
         <div className="row">
-          <div className="col-md-12 pt-5">
+          <div className="col-8 col-md-12 pt-5 mx-auto">
             <h1
               className="text-center font-dancing-reg"
               style={{ fontSize: 50 }}
             >
-              My Work
+              If you would like to see my most recent work go checkout my{' '}
+              <ExternalLink
+                href={`https://www.instagram.com/restoration_brow`}
+                className="insta-link"
+              >
+                Instagram <Instagram className="menu-icon" />
+              </ExternalLink>
             </h1>
           </div>
         </div>
-        <Instagram />
+        <InstagramGallery />
       </div>
     </Layout>
   )
