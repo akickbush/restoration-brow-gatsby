@@ -46,6 +46,13 @@ const FormsPage = ({ data }) => {
             </Link>
           </div>
         </div>
+        <div className="row mt-3">
+          <div className="col-md-10 mx-auto">
+            <Link to="/forms/pre-post-procedure" className="btn btn-restore">
+              Pre/Post-Procedure Instructions
+            </Link>
+          </div>
+        </div>
       </div>
     </Layout>
   )
