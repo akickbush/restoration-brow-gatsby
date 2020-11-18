@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
-import ExternalLink from '../../components/externalLink'
+import ExternalLink from '../../components/ExternalLink'
 import { Instagram } from '../../components/fa'
 import InstagramGallery from '../../components/instagram'
 
